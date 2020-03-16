@@ -1,0 +1,17 @@
+.application {
+  display: flex;
+  min-height: calc(100vh - 64px);
+  justify-content: center;
+  align-items: center;
+}
+
+.application-form-card {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 50px;
+}
+
+.application-form-card form {
+  width: 400px;
+}
