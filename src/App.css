@@ -7,18 +7,28 @@
 }
 
 .App {
-  /* display: flex;
-  justify-content: center;
-  align-items: center; */
   height: 100vh;
   background-color: dimgray;
   color: white;
 }
 
-.user-item {
-  background-color: rgb(167, 161, 148);
+.header {
+  display: flex;
+}
+
+.header a {
+  text-decoration: none;
   display: inline-block;
-  margin: 5px;
-  padding: 10px;
-  border-radius: 10px;
+  padding: 5px 10px 5px 5px;
+  color: white;
+  transition: all .2s;
+  font-size: 16px;
+}
+
+.header a:hover {
+  transform: scale(1.05);
+}
+
+.header a:active {
+  transform: scale(.9);
 }
