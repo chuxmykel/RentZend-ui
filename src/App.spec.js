@@ -2,7 +2,7 @@ import React from 'react';
 import { shallow } from 'enzyme';
 import App from './App';
 
-describe('<App /> with no props', () => {
+describe('<App />', () => {
   const container = shallow(<App />);
   it('should match the snapshot', () => {
     expect(container.html()).toMatchSnapshot();
@@ -12,10 +12,8 @@ describe('<App /> with no props', () => {
     expect(container.find('div').length).toEqual(1);
   });
 
-  it('should have proper props for email field', () => {
-    expect(container.find('div').props()).toEqual({
-      className: 'App',
-      children: 'Hello World'
-    });
+  it('should have proper props main app div', () => {
+    expect(container.find('div').prop('className')).toEqual('App');
+    expect(container.find('div').prop('children')).toBeInstanceOf(Array);
   });
 });
