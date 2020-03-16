@@ -11,4 +11,8 @@ describe('<AgentsView /> with no props', () => {
   it('should have the main div', () => {
     expect(container.find('div').length).toEqual(1);
   });
+
+  it('should have the proper props', () => {
+    expect(container.find('div').prop('className')).toEqual('agents-view');
+  })
 });
